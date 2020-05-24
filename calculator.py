@@ -61,7 +61,7 @@ Button(root, text='1', font=('Courier New', 15, 'bold'), command=lambda: get_var
 Button(root, text='2', font=('Courier New', 15, 'bold'), command=lambda: get_variable(2)).grid(row=1, column=1, sticky=NSEW)
 Button(root, text='3', font=('Courier New', 15, 'bold'), command=lambda: get_variable(3)).grid(row=1, column=2, sticky=NSEW)
 Button(root, text='+', font=('Courier New', 15, 'bold'), command=lambda: get_operation('+'), bg='#d4d4d2').grid(row=1, column=3, sticky=NSEW)
-Button(root, text='\u03c0', font=('Courier New', 15, 'bold'), command=lambda: get_operation('3.14'), bg='#d4d4d2').grid(row=1, column=4, sticky=NSEW)
+Button(root, text='AC', font=('Courier New', 15, 'bold'), bg='#d4d4d2', command=clear_all).grid(row=1, column=4, sticky=NSEW)
 Button(root, text='\u2B05', font=('Courier New', 15, 'bold'), bg='#d4d4d2', command=undo).grid(row=1, column=5, sticky=NSEW)
 
 Button(root, text='4', font=('Courier New', 15, 'bold'), command=lambda: get_variable(4)).grid(row=2, column=0, sticky=NSEW)
@@ -69,7 +69,7 @@ Button(root, text='5', font=('Courier New', 15, 'bold'), command=lambda: get_var
 Button(root, text='6', font=('Courier New', 15, 'bold'), command=lambda: get_variable(6)).grid(row=2, column=2, sticky=NSEW)
 Button(root, text='-', font=('Courier New', 15, 'bold'), command=lambda: get_operation('-'), bg='#d4d4d2').grid(row=2, column=3, sticky=NSEW)
 Button(root, text='%', font=('Courier New', 15, 'bold'), command=lambda: get_operation('%'), bg='#d4d4d2').grid(row=2, column=4, sticky=NSEW)
-Button(root, text='n!', font=('Courier New', 15, 'bold'), bg='#d4d4d2').grid(row=2, column=5, sticky=NSEW)
+Button(root, text='\u03c0', font=('Courier New', 15, 'bold'), command=lambda: get_operation('3.14'), bg='#d4d4d2').grid(row=2, column=5, sticky=NSEW)
 
 Button(root, text='7', font=('Courier New', 15, 'bold'), command=lambda: get_variable(7)).grid(row=3, column=0, sticky=NSEW)
 Button(root, text='8', font=('Courier New', 15, 'bold'), command=lambda: get_variable(8)).grid(row=3, column=1, sticky=NSEW)
@@ -78,7 +78,7 @@ Button(root, text='*', font=('Courier New', 15, 'bold'), command=lambda: get_ope
 Button(root, text='(', font=('Courier New', 15, 'bold'), command=lambda: get_operation('('), bg='#d4d4d2').grid(row=3, column=4, sticky=NSEW)
 Button(root, text=')', font=('Courier New', 15, 'bold'), command=lambda: get_operation(')'), bg='#d4d4d2').grid(row=3, column=5, sticky=NSEW)
 
-Button(root, text='AC', font=('Courier New', 15, 'bold'), bg='#d4d4d2', command=clear_all).grid(row=4, column=0, sticky=NSEW)
+Button(root, text='.', font=('Courier New', 15, 'bold'), bg='#d4d4d2', command=lambda: get_operation('.')).grid(row=4, column=0, sticky=NSEW)
 Button(root, text='0', font=('Courier New', 15, 'bold'), bg='#d4d4d2', command=lambda: get_variable(0)).grid(row=4, column=1, sticky=NSEW)
 Button(root, text='=', font=('Courier New', 15, 'bold'), bg='#d4d4d2', command=calculate).grid(row=4, column=2, sticky=NSEW)
 Button(root, text='/', font=('Courier New', 15, 'bold'), bg='#d4d4d2', command=lambda: get_operation('/')).grid(row=4, column=3, sticky=NSEW)
